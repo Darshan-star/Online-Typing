@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+         <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxO4wYR0haIHNZtbIdKIe0H2ZcnaGt_4kpg&usqp=CAU" type="image/x-icon">
+	<title>Online Typing </title>
+
+	<!-- link the CSS file here -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<br><br><br>
+<div class="container">
+	<div class="heading">
+	Simple Speed Typing
+	</div>
+	<div class="header">
+	<div class="wpm">
+		<div class="header_text">WPM</div>
+		<div class="curr_wpm">100</div>
+	</div>
+	<div class="cpm">
+		<div class="header_text">CPM</div>
+		<div class="curr_cpm">100</div>
+	</div>
+	<div class="errors">
+		<div class="header_text">Errors</div>
+		<div class="curr_errors">0</div>
+	</div>
+	<div class="timer">
+		<div class="header_text">Time</div>
+		<div class="curr_time">60s</div>
+	</div>
+	<div class="accuracy">
+		<div class="header_text">% Accuracy</div>
+		<div class="curr_accuracy">100</div>
+	</div>
+	</div>
+
+	<div class="quote">
+	Click on the area below to start the game.
+	</div>
+	<textarea class="input_area"
+	placeholder="start typing here..."
+	oninput="processCurrentText()"
+	onfocus="startGame()">
+	</textarea>
+	<button class="restart_btn"
+	onclick="resetValues()">
+	Restart
+	</button>
+</div>
+
+<footer>
+  <p>&#x3c; &#47; &#x3e; with ❤️ by 
+    <a href="https://darshan-star.github.io/my-portfolio/">Darshan Yadav</a>
+    <br> 
+    <a href="https://www.linkedin.com/in/darshan-yadav-9496b0201/" target="_blank">Join on LinkedIn
+    </a>
+  </p>
+</footer>
+
+<!-- link the JavaScript file here -->
+<script src="game.js">
+</script>
+</body>
+</html>
